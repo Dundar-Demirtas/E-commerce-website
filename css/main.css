@@ -1,0 +1,556 @@
+
+/* main page css strt */  
+html {
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    font-family: 'Poppins';
+}
+
+
+.wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Navbar */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* productss22*/ 
+/* productss22*/
+/* productss22*/
+/* productss22*/
+div.gallery {
+  
+    margin: 5;
+    border: 60px;  
+    float: left;
+     background-color: white;
+    
+  }
+  
+  /* div.gallery:hover {
+    border: 1px solid #777;
+  }
+   */ 
+  div.gallery img {
+    width: 380px;
+    height: 300px;
+    margin-top:5px;
+    margin-right:0;
+    margin-bottom:5px;
+    margin-left: 0;
+    padding: 10px;
+    border-radius: 2em;
+     
+  }
+  
+  div.desc {
+    padding: 10px;
+    text-align: center;
+  }
+
+  /* productss22END*/
+  /* productss22END*/
+  /* productss22END*/
+  /* productss22END*/
+  /* productss22END*/
+ .logoimg{
+
+    width: 20em;
+height: 5.5em;
+display: flex;
+margin-top: 3em;
+margin-bottom: .5em;
+  margin-right: 4em;
+  margin-left: 0;
+ }
+
+nav {
+     /*margin: 4em;*/
+
+ margin-top: 3em;
+  margin-bottom: .5em;
+  margin-right: .6em;
+  margin-left: 80px;
+     
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 4.1rem;
+    margin: 0;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #0A2463;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    position: relative;
+}
+nav ul li a:hover {
+    background-color: #0A2463;
+    color:white;
+      text-decoration: none;
+     padding: .2em;
+     border-radius: 4px;
+    
+}
+
+nav ul li a.active:before {
+    position: absolute;
+    content: "";
+    width: 35%;
+    height: 1px;
+    border-bottom: 2px solid #0A2463;;
+    bottom: -6px;
+}
+
+nav ul li a:before {
+    position: absolute;
+    content: "";
+    width: 0%;
+    height: 1px;
+    border-bottom: 2px solid rgb(122, 122, 122);
+    bottom: -6px;
+    transition: width .3s;
+}
+
+/* Hero Section */
+
+main {
+    display: flex;
+    gap: 8em;
+    margin-top: 6em;
+}
+
+.left-col {
+    width: 45%;
+}
+.right-col {
+    flex-grow: 1;
+}
+
+ h1 {
+    font-size: 5.2rem;
+    font-family: 'Playfair Display';
+    font-weight: normal;
+    margin: 0;
+    animation: myAnimh1 1s ease 0s 1 normal forwards;
+
+
+    
+}
+ 
+
+.subhead {
+    font-size: 1.8rem;
+    animation: myAnim1 1s ease 0s 1 normal forwards;
+}
+@keyframes myAnimh1 {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+
+.cta-btns {
+    margin: 5em 0;
+}
+
+.cta-btns, .secondary-cta{
+    display: flex;
+    gap: 2em;
+}
+
+.primary-cta {
+    background-color: #0A2463;
+    font-size: 1.8rem;
+     /* font-weight: bold; */ 
+    color: white;
+    text-decoration: none;
+    border-radius: .5em;
+    padding: 1em 1em;
+}
+
+.secondary-cta {
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 1em 0;
+    text-decoration: none;
+    border-radius: .5em;
+    padding: 1em 1em;
+}
+ 
+
+
+.secondary-cta:hover {
+    background-color: #0A2463;
+    color:white;
+      text-decoration: none;
+      border-radius: .5em;
+    
+}
+  
+.secondary-cta svg {
+    width: 20px;
+    transition: transform .3s;
+}
+
+
+.news{
+    display:flex;
+    gap: 3em;
+    padding: 5em;
+    border: 2px solid black;
+    border-radius: .8em;
+    position: relative;
+}
+
+.news:before{
+
+position:absolute;
+content: ""; 
+background: url("../imgs/confetti.svg");
+width: 100px;
+height: 100px;
+top: -20px;
+left: -20px;
+}
+p.employee{
+
+    font-size: 3.3rem;
+    margin: 0;
+    font-weight: 200;
+    line-height: 100%;
+
+}
+p.details{
+
+
+    font-size: 1.4rem;
+    margin:0;
+}
+
+/*right column gallery */ 
+.right-col{
+    display:grid;
+    gap:2.3em;
+    grid-template-columns: repeat(2, auto);
+    grid-template-areas: "left ."
+                         "left .";
+}
+.card{
+     border-radius: .8em;
+     padding: 1.1em;
+     display: flex;
+     align-items: end;
+     background-size: 100%;
+}
+.card1 {
+
+    grid-area: left;
+    background-image: url("../imgs/clothing1.png");
+    animation: animFt1 1s ease 0s 1 normal forwards;
+
+}  
+@keyframes animFt1 {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+
+    
+}  
+.card2 {
+
+ 
+    background-image: url("../imgs/clothing2.png");
+    animation: animft23 1s ease 0s 1 normal forwards;
+}
+.card3 {
+
+    
+    background-image: url("../imgs/clothing3.png");
+    animation: animft23 1s ease 0s 1 normal forwards;
+}
+ @keyframes animft23 {
+	0% {
+		opacity: 0;
+		transform: translateX(50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateX(0);
+	} 
+}  
+.card-details{
+
+background: white;
+border-radius: 0.8em;
+padding: 2em;
+width: 100%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.card-details a {
+
+
+color: black;
+text-decoration: none;
+font-size: 1.6rem;
+font-weight: bold;
+}
+
+.card-details p {
+
+    font-size: 1.4rem;
+    margin: 0;
+}
+p.product-price{
+font-size: 1.8rem;
+
+}
+
+/* main page css ends */  
+
+/* product part css  start*/
+
+/* product part css */
+
+/* product part css */
+/* product part css */
+
+
+
+.maincol{
+    display:grid;
+    gap:2em;
+    grid-template-columns: repeat(3, auto);
+    grid-template-areas: "1, 2, 3"
+                         "1, 2, 3"
+                         "1, 2, 3" ;
+}
+
+.maincol {
+    flex-grow: 1;
+}
+
+
+.cardproduct1{
+    border-radius: .8em;
+    width: 36.3em;
+    height: 24em;
+    padding: 1.6em;
+    display: flex;
+    align-items: end;    
+    background-size: 100%;
+    grid-area: 1;
+    background-image: url("../imgs/clothing1.png");  
+    animation: animFt1 1s ease 0s 1 normal forwards;
+
+}
+@keyframes animFt1 {
+	0% {
+		opacity: 0;
+		transform: translateY(-50px);
+	}
+
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+.cardproduct2 {
+    border-radius: .8em;
+    width: 36.3em;
+    height: 24em;
+    padding: 1.6em;
+    display: flex;
+    align-items: end;
+    background-size: 100%;
+    background-image: url("../imgs/clothing2.png");
+    animation: animFt1 1s ease 0s 1 normal forwards;
+}
+.cardproduct3 {
+
+    border-radius: .8em;
+    width: 36.3em;
+    height: 24em;
+    padding: 1.6em;
+    display: flex;
+    align-items: end;
+    background-size: 100%;
+    background-image: url("../imgs/clothing3.png");
+    animation: animFt1 1s ease 0s 1 normal forwards;
+}
+
+.cardproduct4 {
+
+    border-radius: .8em;
+    width: 36.3em;
+    height: 24em;
+    padding: 1.6em;
+    display: flex;
+    align-items: end;
+    background-size: 100%;
+    background-image: url("../imgs/clothing4.png");
+    animation: animFt1 1s ease 0s 1 normal forwards;
+}
+
+.cardproduct5 {
+    border-radius: .8em;
+    width: 36.3em;
+    height: 24em;
+    padding: 1.6em;
+    display: flex;
+    align-items: end;
+    background-size: 100%;
+    
+    background-image: url("../imgs/clothing5.png");
+    animation: animFt1 1s ease 0s 1 normal forwards;
+}
+
+
+.cardproduct6 {
+    border-radius: .8em;
+    width: 36.3em;
+    height: 24em;
+    padding: 1.6em;
+    display: flex;
+    align-items: end;
+    background-size: 100%;
+    
+    background-image: url("../imgs/clothing6.png");
+    animation: animFt1 1s ease 0s 1 normal forwards;
+}
+
+.cardproduct7 {
+    border-radius: .8em;
+    width: 36.3em;
+    height: 24em;
+    padding: 1.6em;
+    display: flex;
+    align-items: end;
+    background-size: 100%;
+    
+    background-image: url("../imgs/clothing7.png");
+    animation: animFt1 1s ease 0s 1 normal forwards;
+}
+
+.cardproduct8 {
+    border-radius: .8em;
+    width: 36.3em;
+    height: 24em;
+    padding: 1.6em;
+    display: flex;
+    align-items: end;
+    background-size: 100%;
+    
+    background-image: url("../imgs/clothing8.png");
+    animation: animFt1 1s ease 0s 1 normal forwards;
+}
+.cardproduct9 {
+
+    border-radius: .8em;
+    width: 36.3em;
+    height: 24em;
+    padding: 1.6em;
+    display: flex;
+    align-items: end;
+    background-size: 100%;
+    background-image: url("../imgs/clothing9.png");
+    animation: animFt1 1s ease 0s 1 normal forwards;
+}
+ 
+
+.card-details-product{
+
+background: white;
+border-radius: 0.8em;
+padding: .5em;
+width: 100%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.card-details-product:hover {
+
+    animation: productanm 1s ease 0s 1 normal forwards;
+    color: #0A2463;
+    background: white;
+border-radius: 0.8em;
+padding: .5em;
+width: 100%;
+display:flex;
+align-items: center;
+justify-content: space-between;
+     
+    }
+
+
+
+
+
+    
+
+@keyframes productanm {
+	0% {
+		opacity: 0;
+	}
+
+	100% {
+		opacity: 1;
+	}
+}
+
+.card-details-product a {
+
+
+color: black;
+text-decoration: none;
+font-size: 1.6rem;
+font-weight: bold;
+}
+
+
+
+
+.card-details-product p {
+
+    font-size: 1.4rem;
+    margin: 0;
+}
+p.product-price-product{
+font-size: 1.8rem;
+
+}
+
+
+/* #0A2463*/
+
